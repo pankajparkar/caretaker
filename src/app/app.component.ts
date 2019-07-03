@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'caretaker';
+  countries;
+  selectedCountry;
+
+  ngOnInit() {
+      this.countries = [
+          { id: 1, name: "India"},
+          { id: 2, name: "USA" },
+          { id: 3, name: "China" },
+          { id: 4, name: "Japan" }
+      ];
+
+      // this.selectedCountry = [{
+      //     id: 1,
+      //     name: "India"
+      // }];
+  }
 }
